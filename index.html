@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Tech Activity: Database</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Online Tech Activity: Database</h2>
+    <p>By: Reigven </p>
+    <div class="buttons">
+      <button class="button-flex" id="flexButton">Flex</button>
+      <button class="button-float" id="floatButton">Float</button>
+    </div>
+  </div>
+</body>
+</html>
+<style>
+
+body {
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 20px;
+
+ 
+}
+
+p {
+    text-align: center;
+}
+h1 {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-flex,
+.button-float {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.button-flex:hover,
+.button-float:hover {
+  background-color: #0056b3;
+}
+
+.button-float {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-float {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+</style>
+<script>
+
+document.getElementById('floatButton').addEventListener('click', function() {
+  window.location.href = 'float.html';
+});
+
+document.getElementById('flexButton').addEventListener('click', function() {
+  window.location.href = 'flex/dc/index.html';
+});
+
+</script>
