@@ -13,6 +13,7 @@
     <div class="buttons">
       <button class="button-flex" id="flexButton">Flex</button>
       <button class="button-float" id="floatButton">Float</button>
+      <button class="button-bold" id="boldButton">Bold</button>
     </div>
   </div>
 </body>
@@ -49,7 +50,8 @@ h1 {
 }
 
 .button-flex,
-.button-float {
+.button-float,
+.button-bold {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -61,12 +63,18 @@ h1 {
 }
 
 .button-flex:hover,
+.button-bold,
 .button-float:hover {
   background-color: #0056b3;
 }
 
 .button-float {
   margin-left: 10px;
+}
+.button-bold {
+  margin-left: 0;
+  margin-top: 10px;
+  background-color: #007bff;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +89,9 @@ h1 {
     margin-left: 0;
     margin-top: 10px;
   }
+  .button-bold }
+  margin-left: 0;
+  margin-top: 10px;
 }
 
 </style>
@@ -92,6 +103,10 @@ document.getElementById('floatButton').addEventListener('click', function() {
 
 document.getElementById('flexButton').addEventListener('click', function() {
   window.location.href = 'flex/dc/index.html';
+});
+
+document.getElementById('boldButton').addEventListener('click', function() {
+  window.location.href = 'bold/dc/index.html';
 });
 
 </script>
