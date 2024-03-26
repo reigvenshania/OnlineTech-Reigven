@@ -53,6 +53,7 @@ h1 {
 .button-float,
 .button-bold {
   padding: 10px 20px;
+  width: 120px; /* Set a fixed width for all buttons */
   font-size: 16px;
   cursor: pointer;
   border: none;
@@ -60,18 +61,18 @@ h1 {
   background-color: #007bff;
   color: #fff;
   transition: background-color 0.3s;
-
 }
 
 .button-flex:hover,
 .button-float:hover,
-.button-bold:hover{
+.button-bold:hover {
   background-color: #0056b3;
 }
 
 .button-float {
   margin-left: 10px;
 }
+
 .button-bold {
   margin-left: 10px;
   margin-top: 10px;
@@ -91,23 +92,7 @@ h1 {
     margin-top: 10px;
   }
   .button-bold {
-  margin-left: 0;
-  margin-top: 10px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
-
-</style>
-<script>
-
-document.getElementById('floatButton').addEventListener('click', function() {
-  window.location.href = 'float/dc/index.html';
-});
-
-document.getElementById('flexButton').addEventListener('click', function() {
-  window.location.href = 'flex/dc/index.html';
-});
-
-document.getElementById('boldButton').addEventListener('click', function() {
-  window.location.href = 'bold/02. Bold/index.html';
-});
-
-</script>
