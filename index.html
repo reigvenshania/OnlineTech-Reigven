@@ -8,12 +8,18 @@
 </head>
 <body>
   <div class="container">
-    <h2>Online Tech Activity: Database</h2>
+    <h1>Online Tech Activity: Database</h1>
     <p>By: Reigven Shania De Leon</p>
     <div class="buttons">
+      <h3> Non - Responsive</h3>
       <button class="button-flex" id="flexButton">Flex</button>
       <button class="button-float" id="floatButton">Float</button>
       <button class="button-bold" id="boldButton">Bold</button>
+     <br>
+     <br>
+     <h3> Responsive</h3>
+      <button class="button-bold" id="boldButton">Bold</button>
+      <button class="button-bislite" id="bisliteButton">BisLite</button>
     </div>
   </div>
 </body>
@@ -119,11 +125,14 @@ document.getElementById('flexButton').addEventListener('click', function() {
 });
 
 document.getElementById('boldButton').addEventListener('click', function() {
-  window.location.href = 'bold/02. Bold/index.html';
+  window.location.href = 'bold(non-responsive)/02. Bold/index.html';
 });
 
 document.getElementById('bisliteButton').addEventListener('click', function() {
   window.location.href = 'bislite/04. BisLite/index.html';
+});
+document.getElementById('boldButton').addEventListener('click', function() {
+  window.location.href = 'bold(responsive)/02. Bold/index.html';
 });
 
 </script>
