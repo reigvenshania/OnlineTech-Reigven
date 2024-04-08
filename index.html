@@ -18,7 +18,7 @@
      <br>
      <br>
      <h3> Responsive</h3>
-      <button class="button-bold" id="boldButton">Bold</button>
+      <button class="button-bold-responsive" id="boldButtonResponsive">Bold</button>
       <button class="button-bislite" id="bisliteButton">BisLite</button>
     </div>
   </div>
@@ -61,7 +61,8 @@ h1 {
 .button-flex,
 .button-float,
 .button-bold, 
-.button-bislite {
+.button-bislite,
+.button-bold-responsive {
   padding: 10px 20px;
   width: 120px; 
   height: 40px;
@@ -72,13 +73,19 @@ h1 {
   background-color: #007bff;
   color: #fff;
   transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 .button-flex:hover,
 .button-float:hover,
 .button-bold:hover,
-.button-bislite:hover {
+.button-bislite:hover,
+.button-bold-responsive:hover {
   background-color: #0056b3;
+}
+
+.button-flex {
+  margin-left: 10px;
 }
 
 .button-float {
@@ -90,6 +97,10 @@ h1 {
   background-color: #007bff;
 }
 .button-bislite {
+  margin-left: 10px;
+  background-color: #007bff;
+}
+.button-bold-responsive {
   margin-left: 10px;
   background-color: #007bff;
 }
@@ -114,6 +125,10 @@ h1 {
     margin-left: 0;
     margin-top: 10px;
   }
+  .button-bold-responsive {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 </style>
@@ -134,7 +149,8 @@ document.getElementById('boldButton').addEventListener('click', function() {
 document.getElementById('bisliteButton').addEventListener('click', function() {
   window.location.href = 'bislite/04. BisLite/index.html';
 });
-document.getElementById('boldButton').addEventListener('click', function() {
+
+document.getElementById('boldButtonResponsive').addEventListener('click', function() {
   window.location.href = 'bold(responsive)/02. Bold/index.html';
 });
 

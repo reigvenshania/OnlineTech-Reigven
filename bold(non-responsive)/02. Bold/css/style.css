@@ -62,15 +62,6 @@
 	border-top: 2px solid transparent;
 }
 
-.navigation-links li:hover{
-	padding-top: 10px;
-	border-top: 2px solid black;
-}
-
-.navigation-links li:hover a:link {
-	color: white;
-}
-
 .navigation-links a:link,
 .navigation-links a:active{
 	color: black;
@@ -114,11 +105,6 @@
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-}
-
-.sliders-links a:hover,
-.sliders-links a:active {
-	color: gray;
 }
 
 .sliders-links > li {
@@ -192,18 +178,7 @@
 	list-style: none;
 }
 
-.portfolio-thumbnails img {
-	display: block;
-}
 
-.portfolio-thumbnails > li {
-	position: relative;
-	overflow: hidden;
-}
-
-.portfolio-thumbnails > li:hover .overlay {
-	top: 0;
-}
 
 .overlay {
 	display: flex;
@@ -215,8 +190,6 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	transition: all 0.5s ease-in-out;
 }
 
 .overlay a {
@@ -224,16 +197,6 @@
 	display: inline-block;
 	text-decoration: none;
 	font-weight: bold;
-}
-
-.overlay a:link,
-.overlay a:visited {
-	color: white;
-}
-
-.overlay a:hover,
-.overlay a:active {
-	color: white;
 }
 
 /*recent Post*/
@@ -284,28 +247,6 @@
 	padding-top: 40px;
 }
 
-#footer::before{
-	content: "";
-	display: block;
-	width: 25px;
-	height: 3px;
-	background: gray;
-	position: absolute;
-	top: -3px;
-	left: 0px;
-}
-
-#footer::after{
-	content: "";
-	display: block;
-	width: 15px;
-	height: 3px;
-	background: white;
-	position: absolute;
-	top: -3px;
-	left: 20px;
-}
-
 #footer h3 {
 	margin: 20 px 0;
 	margin-bottom: 20px;
@@ -353,11 +294,4 @@
 	padding: 8px;
 }
 
-#footer form input[type='button'] {
-	padding: 8px;
-	flex: 1;
-	color: white;
-	background: gray;
-	border: 1px solid gray;
-	border: 1px solid gray;
-}
+
