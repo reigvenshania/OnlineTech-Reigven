@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online Technology Activity - De Leon, Reigven - BSCPE II-GF</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Technology Activity - De Leon, Reigven - BSCPE II-GF</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poopins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header>
+      <a href="#" class="logo"> COC_STATS</a>
+
+      <ul>
+        <li> <a href="#"> HOME </a></li> 
+        <li> <a href="#"> ABOUT </a></li> 
+        <li> <a href="#"> CLANS </a></li> 
+        <li> <a href="#"> TOWN HALL </a></li> 
+        <li> <a href="#"> CONTACT US </a></li> 
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
   <div class="container">
     <h1>Online Tech Activity: Database</h1>
     <p>By: Reigven Shania De Leon</p>
@@ -16,7 +35,7 @@
       <button class="button-float" id="floatButton">Float</button>
       <button class="button-bold" id="boldButton">Bold</button>
      <br>
-     <br>
+
      <h3> Responsive</h3>
       <button class="button-bold-responsive" id="boldButtonResponsive">Bold</button>
       <button class="button-bislite" id="bisliteButton">BisLite</button>
@@ -30,23 +49,42 @@ body {
   text-align: center;
   justify-content: center;
   margin: 10px;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Poopins' , sans-serif;
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+
+}
+
+.logo {
+  font-size: 30px;
+  font-weight:700;
+  color: white;
+
 }
 
 .container {
   max-width: 960px;
   margin: 50px auto;
   padding: 20px;
-
  
 }
 
+h1,
 p {
     text-align: center;
-}
-h1 {
-  text-align: center;
+    color: white;
 }
 
 .buttons {
