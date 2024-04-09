@@ -117,7 +117,7 @@ h1 {
     visibility: visible;
 }
 
-.with_dropdown .header-main_menu_first {
+.with_dropdown .main_menu_first {
     background: url(../img/arrow-down.png) no-repeat 92%;
     padding-right: 23px;
 }
@@ -494,36 +494,42 @@ h1 {
 	align-items: center;
 }
 
-#submit p {
+#download p {
     color: #363636;
     font-size: 16px;
     line-height: 26px;
     width: 608px;
 }
 
-.submit a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+#download a:before {
+	content: "";
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background: url(../img/arrow-download.png) no-repeat left;
+	background-size: contain;
+	vertical-align: middle; 
+	margin-right: 15px;
+}
+
+#download a {
+    display: block;
     color: #0d0707;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #2aacc8;
-    border: none;
-    transition: background-color 0.3s;
-}
+	
+    padding: 10px;
+    width: 230px;
+	background: linear-gradient(180deg, rgba(139,238,249,1) 0%, rgba(139,238,249,1) 2%, rgba(116,217,229,1) 3%, rgba(45,174,202,1) 100%);
+	border-radius: 5px;
+	border: #2aacc8 2px solid;
+	
+	box-shadow: 1px 4px 15px -7px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 1px 4px 15px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 4px 15px -7px rgba(0,0,0,0.75);
 
-.submit a img {
-    margin-right: 10px;
+	transition: all 0.3s ease;
 }
-
-.submit a:hover {
-    background-color: #0d0707;
-    color: #ffffff;
-}
-
 #footer {
 	background: #e8ebf1;
 	border-top: 1px solid #d9d9d9;
@@ -647,9 +653,6 @@ p#copyright {
     display: none;
 }
 
-
-/*Footer*/
-
 *, *::before, *::after {
 
 	margin: 0;
@@ -672,9 +675,6 @@ p#copyright {
 	clear: both;
 
 }
-
-
-/*Responsive*/
 @media screen and (max-width: 1000px) {
 
  	
