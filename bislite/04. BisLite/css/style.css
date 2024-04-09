@@ -122,7 +122,7 @@ h1 {
     padding-right: 23px;
 }
 
-.with_dropdown:hover .main_menu_first {
+.with_dropdown:hover .header-main_menu_first {
     background: #fff url(../img/arrow-down.png) no-repeat 92%;
     border-top: 5px solid #2aacc8;
     color: #2aacc8;
