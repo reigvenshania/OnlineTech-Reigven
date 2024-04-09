@@ -501,6 +501,17 @@ h1 {
     width: 608px;
 }
 
+#download a:before {
+	content: "";
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background: url(../img/arrow-download.png) no-repeat left;
+	background-size: contain;
+	vertical-align: middle; 
+	margin-right: 15px;
+}
+
 #download a {
     display: block;
     color: #0d0707;
