@@ -5,9 +5,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
+
 .clear {
+
 	clear: both;
+
 }
 
 .clearfix::after,
@@ -69,6 +73,7 @@ h1 {
 #menu-toggle, .menu-button-container {
     display: none;
 }
+
 #header-main_menu > ul  {
 	display: flex;
 	flex-direction: row;
@@ -76,6 +81,8 @@ h1 {
 	gap: 20px;
     justify-content: space-between;
 }
+
+
 .header-main_menu_first {
     color: #000;
     font-size: 13px;
@@ -488,6 +495,7 @@ h1 {
 }
 
 #download p {
+    color: #363636;
     font-size: 16px;
     line-height: 26px;
     width: 608px;
@@ -525,62 +533,81 @@ h1 {
 #bottom-footer {
 	padding-bottom: 30px;
 }
+
+
 .footer_info {
 	margin: 32px 0 40px 0;
 }
+
 #footer_about, #footer_explore, #footer_browse {
 	margin-right: 64px;
 	flex: 1 1 238px;
 }
+
 #footer_about p, #footer_contact p, #copyright {
 	line-height: 17px;
 }
+
 #footer_explore li, #footer_browse li {
 	margin: 12px 0;
 }
+
 #footer_explore li a, #footer_browse li a {
 	text-transform: capitalize;
 }
+
 #footer_explore li a:hover, #footer_browse li a:hover {
 	color: #2aacc8;
 }
+
 #footer_connect {
 	width: 213px;
 }
+
 #footer_connect > ul {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 #footer_connect h4 {
 	margin-left: 24px;
 }
+
 #footer_connect a {
 	display: block;
 	height: 51px;
 	margin: 0 0 10px 18px;
 	width: 53px;
 }
+
 #facebook {
 	background: url(../img/social\ \(1\).png) no-repeat;
 }
+
 #dribbble {
 	background: url(../img/social\ \(2\).png) no-repeat;
 }
+
 #pinterest {
 	background: url(../img/social\ \(3\).png) no-repeat;
 }
+
 #linkedin {
 	background: url(../img/social\ \(4\).png) no-repeat;
 }
+
 #skype {
 	background: url(../img/social\ \(5\).png) no-repeat;
 }
+
 #sharethis {
 	background: url(../img/social\ \(6\).png) no-repeat;
 }
+
 p#copyright {
 	font-size: 13px;
 }
+
 #footer_logo {
 	background: url(../img/bislite-logo.png) no-repeat;
 	display: block;
@@ -616,6 +643,7 @@ p#copyright {
 	content: "";
 	display: block;
 	clear: both;
+
 }
 @media screen and (max-width: 1000px) {
 
@@ -623,24 +651,30 @@ p#copyright {
 	.container, #latest-works, #bottom-content, #download {
 		margin: 0 auto;
 		width: 100%;
+
 	}
+
 	#footer,#main_menu,#latest-works, #bottom-content, #download {
 		margin: 0 auto;
 		width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
 	#bottom-footer {
 		justify-content: space-around;
 	}
+
 	#footer-logo{
 		width: 100%;
 		z-index: 98;
 	}
+
 	#mid_content {
 		height: auto;
 		padding: 20px;
 	}
+
 	#mid_content > ul {
 		justify-content: space-around;
 	}
@@ -673,20 +707,27 @@ p#copyright {
     #clients ul > li > img {  
         width: 100%;
     }
+
+
 	#footer{
 		height: auto;
 		margin-top: 20px;
 	}
+
     #download > ul {
         width: 100%;
         justify-content: center;
     }
+
     #download > ul > li > * {
         width: 100%;
     }
+
     #download > ul > li > a {
         margin-top: 20px;
     }
+
+
   #footer_connect {
     width: 100%;
   }
@@ -860,7 +901,10 @@ p#copyright {
     #mid_content  {
         padding-bottom:50px;
     }
+    
 }
+
+
 @media screen and (max-width: 465px) {
     #carousel-wrapper > ul {
         width: 100%;
@@ -868,18 +912,22 @@ p#copyright {
         flex-direction: column;
         justify-content: center;
     }
+
     #carousel-wrapper li {
         margin: 20px 0; 
     }
+
     #carousel-wrapper > ul > li > a > img  {
         width: 100%;
         height: auto;
         gap: 20px;
     }
+
     #carousel-wrapper > ul > li > a   {
         width: 100%;
         height: auto;
     }
+
     #carousel-wrapper > ul > li  {
         flex-grow: 1;
     }
