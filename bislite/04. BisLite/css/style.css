@@ -665,9 +665,6 @@ p#copyright {
     display: none;
 }
 
-
-/*Footer*/
-
 *, *::before, *::after {
 
 	margin: 0;
@@ -690,9 +687,6 @@ p#copyright {
 	clear: both;
 
 }
-
-
-/*Responsive*/
 @media screen and (max-width: 1000px) {
 
  	
