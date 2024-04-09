@@ -27,11 +27,15 @@
     </header>
     <section class="hero">
       <div class="container">
+        
         <div class="hero-text">
           <h1>Online Technology</h1>
-          <p>Compiled Activities</p>
+          
+          <p>Hello, I'm Reigven Shania S. De Leon, a 20-year-old computer engineering student from Siniloan, Laguna. <br>Currently in my second year of studies, I'm passionate about exploring the vast world of online technology. <br> Here, you'll find a collection of compiled activities that showcase my dedication to learning and growth in <br> this exciting field.</p>
+  
           <a href="#"></a>
-          <a href="#" class="ctaa"><i class="ri-play-fill"></i>Enjoy!</a>
+          
+        </div>
         </div>
     
         <div class="buttons">
@@ -43,11 +47,11 @@
           <h3>Responsive</h3>
           <button class="button-bold-responsive" id="boldButtonResponsive">Bold</button>
           <button class="button-bislite" id="bisliteButton">BisLite</button>
-        </div>
+        
+        <p> Thank you for exploring my compilation of activities in online technology! I hope you found inspiration and insights into the fascinating world of digital innovation. Stay curious, keep learning, and let's continue to embrace the endless possibilities that technology offers us. Feel free to reach out if you have any questions or if you'd like to connect further. Until next time, happy exploring!</p>
       </div>
     
-      <div class="picture-reigven">
-        <img src="reigven-pic-removebg.png" class="small-image">
+      
       </div>
     </section>
 </body>
@@ -140,16 +144,15 @@ header h2{
 }
 
 .small-image {
+  flex-wrap: wrap;
   width: 60%;
   height: auto;
   margin-left: 60%;
-  
+  flex-shrink: 0;
   
 }
 
-.picture-reigven {
-  flex-shrink: 0;
-}
+
 
 section {
   padding: 0 19%;
@@ -196,16 +199,38 @@ section {
   width: 200px;
   height: auto;
   margin-right: 20px;
-  
+  flex-wrap: wrap;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 10px;
   margin-bottom: 20px;
+  margin-right: 100px;
+  
+}
+
+.buttons h3 {
+  color: white;
+  margin: 0 500px 20px 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  text-align: center;
+
+
+}
+
+p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+  margin-top: 5%;
 }
 
 .button-flex,
