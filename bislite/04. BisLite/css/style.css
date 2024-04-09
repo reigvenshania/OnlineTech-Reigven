@@ -5,13 +5,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
-
 .clear {
-
 	clear: both;
-
 }
 
 .clearfix::after,
@@ -73,7 +69,6 @@ h1 {
 #menu-toggle, .menu-button-container {
     display: none;
 }
-
 #header-main_menu > ul  {
 	display: flex;
 	flex-direction: row;
@@ -81,8 +76,6 @@ h1 {
 	gap: 20px;
     justify-content: space-between;
 }
-
-
 .header-main_menu_first {
     color: #000;
     font-size: 13px;
