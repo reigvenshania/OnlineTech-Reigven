@@ -494,33 +494,35 @@ h1 {
 	align-items: center;
 }
 
-#download p {
+#submit p {
     color: #363636;
     font-size: 16px;
     line-height: 26px;
     width: 608px;
 }
 
-#download a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
+.submit a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #fff;
-    background-color: #2aacc8;
-    border: 2px solid #2aacc8;
+    color: #0d0707;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    background-color: #2aacc8;
+    border: none;
+    transition: background-color 0.3s;
 }
 
-#download a:hover {
-    background-color: #1abbdf;
-    border-color: #1abbdf;
-    color: #fff;
+.submit a img {
+    margin-right: 10px;
 }
 
-/*Footer*/
+.submit a:hover {
+    background-color: #0d0707;
+    color: #ffffff;
+}
 
 #footer {
 	background: #e8ebf1;
