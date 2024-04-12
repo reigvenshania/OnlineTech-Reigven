@@ -39,6 +39,7 @@
         </div>
     
         <div class="buttons">
+          <h1> PRELIMS </h1> <br>
           <h3>Non - Responsive</h3>
           <button class="button-flex" id="flexButton">Flex</button>
           <button class="button-float" id="floatButton">Float</button>
@@ -48,6 +49,10 @@
           <button class="button-bold-responsive" id="boldButtonResponsive">Bold</button>
           <button class="button-bislite" id="bisliteButton">BisLite</button>
         
+          <br><br><h1> MIDTERM </h1> 
+          <h3>Non - Responsive</h3>
+          <button class="button-form-Application" id="form-ApplicationButton">Form Application</button>
+
         <p> Thank you for exploring my compilation of activities in online technology! I hope you found inspiration and insights into the fascinating world of digital innovation. Stay curious, keep learning, and let's continue to embrace the endless possibilities that technology offers us. Feel free to reach out if you have any questions or if you'd like to connect further. Until next time, happy exploring!</p>
       </div><div class="picture-reigven">
         <img src="reigven-pic-removebg-preview.png" class="small-image">
@@ -221,6 +226,10 @@ section {
   
 }
 
+.buttons h1 {
+  color: white;
+}
+
 .buttons h3 {
   color: white;
   margin: 0 500px 20px 100px;
@@ -259,11 +268,27 @@ p {
   margin-top: 10px;
 }
 
+.button-form-Application{
+  padding: 10px 20px;
+  width: 160px; 
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #30994a;
+  color: #fff;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+
+}
+
 .button-flex:hover,
 .button-float:hover,
 .button-bold:hover,
 .button-bislite:hover,
-.button-bold-responsive:hover {
+.button-bold-responsive:hover,
+.button-form-Application:hover {
   background-color: #5f9886;
 }
 
@@ -287,8 +312,12 @@ p {
   margin-left: 10px;
   background-color: #30994a;
 }
+.button-form-Application {
+  margin-left: 10px;
+  background-color: #30994a;
+}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .container {
     padding: 10px;
   }
@@ -309,6 +338,10 @@ p {
     margin-top: 10px;
   }
   .button-bold-responsive {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .button-form-Application {
     margin-left: 0;
     margin-top: 10px;
   }
@@ -336,5 +369,12 @@ document.getElementById('bisliteButton').addEventListener('click', function() {
 document.getElementById('boldButtonResponsive').addEventListener('click', function() {
   window.location.href = 'bold(responsive)/02. Bold/index.html';
 });
+
+document.getElementById('form-ApplicationButton').addEventListener('click', function() {
+  window.location.href = 'Form Application/index.html';
+});
+
+
+
 
 </script>
