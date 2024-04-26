@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
   var angle = 0;
@@ -9,15 +10,7 @@ $(document).ready(function() {
   $('.carousel-item').each(function(index) {
 
     $(this).css({
-
-      /* 
-       Iterate each .carousel item with a css property of:
-       transform: rotateY(itemDegree * index) translateZ(275px);
-     */   
-
-      //Place your code below:
-      
-    
+      'transform': 'rotateY(' + (itemDegree * index) + 'deg) translateZ(275px)'
     });
   
   });
@@ -25,41 +18,19 @@ $(document).ready(function() {
   function rotateCarousel() {
 
     $('.carousel').css({
-        
-        /* 
-        In order to rotate the $('.carousel') place a css property of
-        transform: rotateY(angle)
-        */
-
-        //Place your code below:
-        
-
+      'transform': 'rotateY(' + angle + 'deg)'
     });
 
   }
 
   $('#next').click(function() {
-
-    /* in order for the previous image to show, you need to decrement the angle by the itemDegree */
-    //Place your code below
-    
-    
-    /* Call the rotateCarousel function */
-    //Place your code below
-    
-
+    angle -= itemDegree;
+    rotateCarousel();
   });
 
   $('#prev').click(function() {
-
-    /* in order for the previous image to show, you need to increment the angle by the itemDegree */
-    //Place your code below
-    
-    
-    /* Call the rotateCarousel function */
-    //Place your code below
-    
-
+    angle += itemDegree;
+    rotateCarousel();
   });
 
   $('#autoplay').on('click', function() {
@@ -67,10 +38,8 @@ $(document).ready(function() {
     if (!autoplay) {
 
       interval = setInterval(function(){
-
         angle -= itemDegree;
         rotateCarousel();
-
       }, 2000); // Change interval time to control rotation speed
       
       autoplay = true;
