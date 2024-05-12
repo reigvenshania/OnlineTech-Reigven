@@ -53,6 +53,8 @@
           <h3>Non - Responsive</h3>
           <button class="button-form-Application" id="form-ApplicationButton">Form Application</button>
           <button class="button-carousel" id="carouselButton">Carousel</button>
+          <br><br> <h3>Responsive</h3>
+          <button class="button-jetro" id="jetroButton">Jetro</button>
         <p> Thank you for exploring my compilation of activities in online technology! I hope you found inspiration and insights into the fascinating world of digital innovation. Stay curious, keep learning, and let's continue to embrace the endless possibilities that technology offers us. Feel free to reach out if you have any questions or if you'd like to connect further. Until next time, happy exploring!</p>
       </div><div class="picture-reigven">
    
@@ -255,7 +257,8 @@ p {
 .button-bold, 
 .button-bislite,
 .button-bold-responsive,
-.button-carousel {
+.button-carousel,
+.button-jetro {
   padding: 10px 20px;
   width: 120px; 
   height: 40px;
@@ -290,7 +293,8 @@ p {
 .button-bislite:hover,
 .button-bold-responsive:hover,
 .button-form-Application:hover,
-.button-carousel:hover {
+.button-carousel:hover,
+.button-jetro:hover {
   background-color: #5f9886;
 }
 
@@ -319,6 +323,11 @@ p {
   background-color: #30994a;
 }
 .button-carousel{
+  margin-left: 10px;
+  background-color: #30994a;
+}
+
+.button-jetro {
   margin-left: 10px;
   background-color: #30994a;
 }
@@ -382,6 +391,9 @@ document.getElementById('form-ApplicationButton').addEventListener('click', func
 
 document.getElementById('carouselButton').addEventListener('click', function() {
   window.location.href = 'Carousel/carousel/index.html';
+});
+document.getElementById('jetroButton').addEventListener('click', function() {
+  window.location.href = 'Jetro/07. Jetro/index.html';
 });
 
 
