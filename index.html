@@ -138,7 +138,7 @@ header h2{
   height: 100%;
   width: 100%;
   min-height: 100hv;
-  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+  background: linear-gradient(245.59deg, #000000 0%, #272727 100%);
   position: relative;
   display: grid;
   flex-direction: column;
@@ -266,23 +266,25 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #30994a;
-  color: #fff;
-  transition: background-color 0.3s;
+  background-color: transparent; /* Set button background to transparent */
+  color: #fff; /* Button text color */
+  border: 2px solid #fff; /* Button border */
+  transition: background-color 0.3s, color 0.3s;
   margin-top: 10px;
 }
 
 .button-form-Application{
   padding: 10px 20px;
-  width: 160px; 
+  width: 170px; 
   height: 40px;
   font-size: 16px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #30994a;
-  color: #fff;
-  transition: background-color 0.3s;
+  background-color: transparent; /* Set button background to transparent */
+  color: #fff; /* Button text color */
+  border: 2px solid #fff; /* Button border */
+  transition: background-color 0.3s, color 0.3s;
   margin-top: 10px;
 
 }
@@ -295,7 +297,11 @@ p {
 .button-form-Application:hover,
 .button-carousel:hover,
 .button-jetro:hover {
-  background-color: #5f9886;
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black font color on hover */
+  border: 2px solid #000;
+
+
 }
 
 .button-flex {
@@ -307,29 +313,28 @@ p {
 }
 
 .button-bold {
-  margin-left: 10px;
-  background-color: #30994a;
+
 }
 .button-bislite {
   margin-left: 10px;
-  background-color: #30994a;
+ 
 }
 .button-bold-responsive {
   margin-left: 10px;
-  background-color: #30994a;
+
 }
 .button-form-Application {
   margin-left: 10px;
-  background-color: #30994a;
+  
 }
 .button-carousel{
   margin-left: 10px;
-  background-color: #30994a;
+
 }
 
 .button-jetro {
   margin-left: 10px;
-  background-color: #30994a;
+  
 }
 
 @media screen and (max-width: 1000px) {
