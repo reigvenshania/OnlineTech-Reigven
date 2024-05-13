@@ -1,25 +1,55 @@
-$(document).ready(function() {
-    function toggleAccordion() {
-        var accordionContent = $(this).next('.accordion-content');
-        accordionContent.slideToggle();
-        $('.accordion-content').not(accordionContent).slideUp();
-    }
-
-    $('.accordion-header').on('click', toggleAccordion);
-
-    // Function to handle accordion behavior on small screens
-    function handleAccordionForSmallScreen() {
-        if ($(window).width() <= 767) { // Adjust the breakpoint as needed
-            $('.accordion-header').off('click', toggleAccordion);
-            $('.accordion-header').on('click', toggleAccordion);
-        } else {
-            $('.accordion-header').off('click', toggleAccordion);
+$(document).ready(function(){
+    var index = 1;
+$(".slider-next-button").click(function(){
+       index++;
+    if (index>6){
+            index=1;
         }
-    }
+    $(".imageMain").attr("src", "../jetro/img/slider-image-" + index + ".jpg");
+    $(".slide-info > h3").html("SLIDE " + index);
+});
 
-    // Call the function initially
-    handleAccordionForSmallScreen();
+$(".slider-previous-button").click(function(){
+    index--;
+ if (index<1){
+         index=6;
+     }
+ $(".imageMain").attr("src", "../jetro/img/slider-image-" + index + ".jpg");
+ $(".slide-info > h3").html("SLIDE " + index);
+});
 
-    // Call the function whenever the window is resized
-    $(window).on('resize', handleAccordionForSmallScreen);
+$('.thumbnail > li').click(function(){
+    var index = $(this).index();
+    console.log(index);
+    var imgSrc = "../jetro/img/slider-image-" + (index+1) + ".jpg";
+    $('#expandedImg').attr('src', imgSrc);
+    $('.modal').css('display', 'block');
+});
+
+$('.close').click(function(){
+    $('.modal').css('display', 'none');
+});
+
+$(".rotate-arrow").click(function(){
+    $(".thumbnail").slideToggle();
+   $(this).toggleClass('rotate');
+});
+
+
+
+$(".jetrotoggle").click(function(){
+     $(".navigation").slideToggle();
+   $(this).toggleClass('rotate');
+});
+
+
+    $('.accordion-header').click(function(){
+        $(this).toggleClass('active').next('.accordion-content').slideToggle();
+
+        
+        $('.accordion-content').not($(this).next()).slideUp();
+        $('.accordion-header').not($(this)).removeClass('active');
+    });
+
+
 });
