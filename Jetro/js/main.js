@@ -1,6 +1,8 @@
 $(document).ready(function(){
-  
 
+    
+
+  
     $('.accordion-header').click(function(){
         $(this).toggleClass('active').next('.accordion-content').slideToggle();
 
