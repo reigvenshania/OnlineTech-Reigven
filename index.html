@@ -55,6 +55,14 @@
           <button class="button-carousel" id="carouselButton">Carousel</button>
           <br><br> <h3>Responsive</h3>
           <button class="button-jetro" id="jetroButton">Jetro</button>
+
+          <br><br><h1> FINALS </h1> 
+          <br><br> <h3>Responsive</h3>
+          <button class="button-basicCrud" id="basicCrudButton">13. Backend</button>
+       
+
+
+
         <p> Thank you for exploring my compilation of activities in online technology! I hope you found inspiration and insights into the fascinating world of digital innovation. Stay curious, keep learning, and let's continue to embrace the endless possibilities that technology offers us. Feel free to reach out if you have any questions or if you'd like to connect further. Until next time, happy exploring!</p>
       </div><div class="picture-reigven">
    
@@ -258,7 +266,7 @@ p {
 .button-bislite,
 .button-bold-responsive,
 .button-carousel,
-.button-jetro {
+.button-jetro{
   padding: 10px 20px;
   width: 120px; 
   height: 40px;
@@ -273,7 +281,8 @@ p {
   margin-top: 10px;
 }
 
-.button-form-Application{
+.button-form-Application,
+.button-basicCrud {
   padding: 10px 20px;
   width: 170px; 
   height: 40px;
@@ -296,7 +305,8 @@ p {
 .button-bold-responsive:hover,
 .button-form-Application:hover,
 .button-carousel:hover,
-.button-jetro:hover {
+.button-jetro:hover,
+.button-basicCrud:hover {
   background-color: #fff; /* White background on hover */
   color: #000; /* Black font color on hover */
   border: 2px solid #000;
@@ -336,6 +346,9 @@ p {
   margin-left: 10px;
   
 }
+.button-basicCrud{
+  margin-left: 10px;
+}
 
 @media screen and (max-width: 1000px) {
   .container {
@@ -364,6 +377,11 @@ p {
   .button-form-Application {
     margin-left: 0;
     margin-top: 10px;
+  }
+  .button-basicCrud{
+    margin-top: 10px;
+    margin-left: 0;
+
   }
 }
 
@@ -400,7 +418,9 @@ document.getElementById('carouselButton').addEventListener('click', function() {
 document.getElementById('jetroButton').addEventListener('click', function() {
   window.location.href = 'Jetro/index.html';
 });
-
+document.getElementById('basicCrudButton').addEventListener('click', function() {
+  window.location.href = 'basic_crud/index.html';
+});
 
 
 
