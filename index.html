@@ -58,7 +58,8 @@
 
           <br><br><h1> FINALS </h1> 
           <br><br> <h3>Responsive</h3>
-          <button class="button-basicCrud" id="basicCrudButton">13. Backend</button>
+          <button class="button-basicCrud" id="basicCrudButton">Basic Crud</button>
+          <button class="button-finalExam" id="finalExamButton">Final Exam</button>
        
 
 
@@ -260,13 +261,14 @@ p {
   margin-top: 5%;
 }
 
+/* Base button styles */
 .button-flex,
 .button-float,
-.button-bold, 
+.button-bold,
 .button-bislite,
 .button-bold-responsive,
 .button-carousel,
-.button-jetro{
+.button-jetro {
   padding: 10px 20px;
   width: 120px; 
   height: 40px;
@@ -274,15 +276,16 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: transparent; /* Set button background to transparent */
+  background: linear-gradient(135deg, #000 0%, #333 100%); /* Black gradient background */
   color: #fff; /* Button text color */
-  border: 2px solid #fff; /* Button border */
-  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid transparent; /* Transparent border */
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
   margin-top: 10px;
 }
 
 .button-form-Application,
-.button-basicCrud {
+.button-basicCrud,
+.button-finalExam {
   padding: 10px 20px;
   width: 170px; 
   height: 40px;
@@ -290,14 +293,14 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: transparent; /* Set button background to transparent */
+  background: linear-gradient(135deg, #000 0%, #333 100%); /* Black gradient background */
   color: #fff; /* Button text color */
-  border: 2px solid #fff; /* Button border */
-  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid transparent; /* Transparent border */
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
   margin-top: 10px;
-
 }
 
+/* Base styles for button hover */
 .button-flex:hover,
 .button-float:hover,
 .button-bold:hover,
@@ -306,82 +309,86 @@ p {
 .button-form-Application:hover,
 .button-carousel:hover,
 .button-jetro:hover,
-.button-basicCrud:hover {
-  background-color: #fff; /* White background on hover */
+.button-basicCrud:hover,
+.button-finalExam:hover {
+  background: linear-gradient(135deg, #fff 0%, #ddd 100%); /* White gradient background on hover */
   color: #000; /* Black font color on hover */
   border: 2px solid #000;
-
-
+  transform: scale(1.05); /* Slightly increase size on hover */
 }
 
-.button-flex {
-  margin-left: 10px;
-}
-
-.button-float {
-  margin-left: 10px;
-}
-
-.button-bold {
-
-}
-.button-bislite {
-  margin-left: 10px;
- 
-}
-.button-bold-responsive {
-  margin-left: 10px;
-
-}
-.button-form-Application {
-  margin-left: 10px;
-  
-}
-.button-carousel{
-  margin-left: 10px;
-
-}
-
-.button-jetro {
-  margin-left: 10px;
-  
-}
-.button-basicCrud{
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-    padding: 10px;
+/* Responsive styles for different screen sizes */
+@media (max-width: 1200px) {
+  .button-flex:hover,
+  .button-float:hover,
+  .button-bold:hover,
+  .button-bislite:hover,
+  .button-bold-responsive:hover,
+  .button-form-Application:hover,
+  .button-carousel:hover,
+  .button-jetro:hover,
+  .button-basicCrud:hover,
+  .button-finalExam:hover {
+    background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%); /* Light grey gradient background on hover */
+    color: #333; /* Dark grey font color on hover */
+    border: 2px solid #333;
+    transform: scale(1.05); /* Slightly increase size on hover */
   }
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  .button-float {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .button-bold {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .button-bislite {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .button-bold-responsive {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .button-form-Application {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .button-basicCrud{
-    margin-top: 10px;
-    margin-left: 0;
+}
 
+@media (max-width: 768px) {
+  .button-flex:hover,
+  .button-float:hover,
+  .button-bold:hover,
+  .button-bislite:hover,
+  .button-bold-responsive:hover,
+  .button-form-Application:hover,
+  .button-carousel:hover,
+  .button-jetro:hover,
+  .button-basicCrud:hover,
+  .button-finalExam:hover {
+    background: linear-gradient(135deg, #e0e0e0 0%, #b0b0b0 100%); /* Slightly darker grey gradient background on hover */
+    color: #666; /* Medium grey font color on hover */
+    border: 2px solid #666;
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+}
+
+@media (max-width: 480px) {
+  .button-flex,
+  .button-float,
+  .button-bold,
+  .button-bislite,
+  .button-bold-responsive,
+  .button-carousel,
+  .button-jetro {
+    width: 100px; /* Adjust button width for small screens */
+    height: 35px; /* Adjust button height for small screens */
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .button-form-Application,
+  .button-basicCrud,
+  .button-finalExam {
+    width: 140px; /* Adjust button width for small screens */
+    height: 35px; /* Adjust button height for small screens */
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .button-flex:hover,
+  .button-float:hover,
+  .button-bold:hover,
+  .button-bislite:hover,
+  .button-bold-responsive:hover,
+  .button-form-Application:hover,
+  .button-carousel:hover,
+  .button-jetro:hover,
+  .button-basicCrud:hover,
+  .button-finalExam:hover {
+    background: linear-gradient(135deg, #ccc 0%, #999 100%); /* Darker grey gradient background on hover */
+    color: #999; /* Light grey font color on hover */
+    border: 2px solid #999;
+    transform: scale(1.05); /* Slightly increase size on hover */
   }
 }
 
@@ -421,7 +428,9 @@ document.getElementById('jetroButton').addEventListener('click', function() {
 document.getElementById('basicCrudButton').addEventListener('click', function() {
   window.location.href = 'basic_crud/index.html';
 });
-
+document.getElementById('finalExamButton').addEventListener('click', function() {
+  window.location.href = 'http://reigven-oltech.rf.gd/final_exam/index.php?i=1';
+});
 
 
 
