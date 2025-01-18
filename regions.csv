@@ -2,7 +2,7 @@
 ,,,,,,,,,,,,,,,,,,,,,,,,
 ,First Semester Income Gap,,,,,,,,First Semester Poverty Gap,,,,,,,,First Semester Severity of Poverty,,,,,,,
 ,Estimate (%),,Standard Error,,90% Confidence Interval (Lower limit),,90% Confidence Interval (Upper limit),,Estimate (%),,Standard Error,,90% Confidence Interval (Lower limit),,90% Confidence Interval (Upper limit),,Estimate (%),,Standard Error,,90% Confidence Interval (Lower limit),,90% Confidence Interval (Upper limit),
-NAME_1,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021
+NAME_1,NAME_2,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021,2018u,2021
 PHILIPPINES,27.0,27.0,0.2,0.2,26.7,26.7,27.3,27.3,4.4,4.9,0.1,0.1,4.3,4.7,4.5,5.0,1.8,1.9,0.0,0.0,1.7,1.9,1.9,2.0
  1st District,30.3,11.5,2.3,2.0,26.6,8.2,34.0,14.8,1.7,0.2,0.3,0.1,1.2,0.1,2.3,0.3,0.9,0.0,0.2,0.0,0.6,0.0,1.2,0.1
  2nd District,24.7,18.2,2.3,1.4,20.9,15.9,28.4,20.6,0.9,0.7,0.1,0.1,0.6,0.6,1.1,0.8,0.4,0.2,0.1,0.0,0.2,0.2,0.5,0.3
